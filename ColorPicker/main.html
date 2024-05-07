@@ -1,0 +1,77 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Color Flipper</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <style>
+    /* h3 {
+      text-align: left;
+    }
+
+    button {
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+      font-size: 1rem;
+      width: 100px;
+      border-color: white;
+      cursor: pointer;
+    }
+
+    #green {
+      background-color: green;
+      color: white;
+    }
+
+    #red {
+      background-color: red;
+      color: white;
+    }
+
+    #blue {
+      background-color: blue;
+      color: white;
+    } */
+  </style>
+  <body class="container p-5 flex flex-col gap-y-5">
+    <h3 class="text-3xl font-bold text-blue-800">Color Flipper</h3>
+
+    <div class="flex gap-x-5">
+      <button
+        id="green"
+        class="px-3 py-2 bg-green-500 text-white hover:bg-green-600 border border-green-800"
+        onclick="setColor('green')"
+      >
+        Green
+      </button>
+
+      <button
+        id="red"
+        class="px-3 py-2 bg-red-500 text-white hover:bg-red-600 border border-red-800"
+        onclick="setColor('red')"
+      >
+        Red
+      </button>
+
+      <button
+        id="blue"
+        class="px-3 py-2 bg-blue-500 text-white hover:bg-blue-600 border border-blue-800"
+        onclick="setColor('blue')"
+      >
+        Blue
+      </button>
+
+      <button
+        class="px-3 py-2 bg-gray-100 hover:bg-gray-200 border border-gray-600"
+        onclick="randomColor()"
+      >
+        Random
+      </button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
